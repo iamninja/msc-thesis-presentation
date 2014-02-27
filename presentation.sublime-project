@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"file_exclude_patterns":[
+			"*.aux",
+			"*.key",
+			"*.gz",
+			"*.pdf",
+			"*.log",
+			"*.nav",
+			"*.snm",
+			"*.out",
+			"*.fdb*",
+			"*.toc",
+			"*.png"
+			]
+		},
+	]
+}
