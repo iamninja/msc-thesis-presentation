@@ -343,14 +343,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "omv-presentation.tex",
-			"settings":
-			{
-				"buffer_size": 282,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"command_palette":
@@ -420,6 +412,10 @@
 	},
 	"file_history":
 	[
+		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/main.tex",
+		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/o-minimal.tex",
+		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/variations.tex",
+		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/.gitignore",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/presentation.sublime-project",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/omv-presentation.tex",
 		"/Users/iamninja/Projects/book/app/views/statuses/index.html.erb",
@@ -543,11 +539,7 @@
 		"/Users/iamninja/Projects/treebook/db/development.sqlite3",
 		"/Users/iamninja/Projects/treebook/test/test_helper.rb",
 		"/Users/iamninja/Projects/treebook/test/helpers/statuses_helper_test.rb",
-		"/Users/iamninja/Projects/treebook/.gitignore",
-		"/Users/iamninja/Projects/treebook/app/assets/stylesheets/scaffolds.css.scss",
-		"/Users/iamninja/Projects/treebook/public/assets/application-1e9fbfa8f2130984250bb339ac138f0a.css",
-		"/Users/iamninja/Projects/treebook/public/assets/application.css",
-		"/Users/iamninja/Projects/treebook/app/assets/javascripts/application.js"
+		"/Users/iamninja/Projects/treebook/.gitignore"
 	],
 	"find":
 	{
@@ -587,39 +579,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "omv-presentation.tex",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 282,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
