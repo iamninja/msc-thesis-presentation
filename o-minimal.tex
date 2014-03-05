@@ -4,7 +4,7 @@
 \subsection{Introduction}
 
 
-\begin{frame}{o-Minimality}
+\begin{frame}[c]{o-Minimality}
 	\begin{block}{Assumptions}
 		\begin{itemize}
 			\item $\mathcal{M}=(M,<,\ldots)$
@@ -19,7 +19,7 @@
 	\end{definition}
 \end{frame}
 
-\begin{frame}{o-Minimality}
+\begin{frame}[c]{o-Minimality}
 	The class of o-minimal structures is,
 		\begin{itemize}
 			\item closed under reducts (if $<$ still remains in the language)
@@ -41,7 +41,7 @@
 
 \subsection{Monotonicity and Finiteness}
 
-\begin{frame}{Monotonicity and Finiteness}
+\begin{frame}[c]{Monotonicity and Finiteness}
 	\begin{block}{Monotonicity Theorem}
 		Let $\mathcal{M}$ be an o-minimal structure and $f:(a,b) \to M$ be a definable function with domain $(a,b)$(possibly $a=- \infty$ or $b=+ \infty$).
 		Then, there are points $a=a_0<a_1< \cdots <a_{k+1}$ s.t. for each $j=0,\ldots,k$, $f|_{(a_j,a_{j+1})}$ is either,
@@ -69,7 +69,7 @@
 %     \end{beamerboxesrounded}
 % \end{frame}
 
-\begin{frame}[t]\frametitle{Applications}	
+\begin{frame}[c]\frametitle{Applications}	
     
 	\begin{block}{Corollary}
 		Let $f:(a,b) \to M$ be definale and continuous. Then $f$ takes a maximum and minimum value on $[a,b]$.
@@ -80,5 +80,97 @@
 		Let $b,c,a_1,\ldots,a_n \in \mathcal{M}$.
 		If $b$ is definable over $c,a_1,\ldots,a_n$, and $b$ is not definable over $a_1,\ldots,a_n$, then $c$ is definable over $b,a_1,\ldots,a_n$.
 	\end{block}
+
+\end{frame}
+
+\subsection{Cell Decomposition}
+
+\begin{frame}[c]\frametitle{Motivation}
+	
+	\begin{beamerboxesrounded}[shadow=true]{Question}
+		What happens with the definable subsets of $M^n$?
+	\end{beamerboxesrounded}
+    
+	\begin{beamerboxesrounded}[shadow=true]{Notation}
+		Given definable $X \subseteq M^n$
+		\begin{itemize}
+			\item $C(X):= \{ f:X \to M|f \text{ is definable and continuous}\}$
+			\item $C_\infty(X):=C(X) \cup \{ -\infty, +\infty \}$
+			\item for $f,g \in C_\infty(X)$ s.t. $(\forall \bar{x} \in X)(f(\bar{x})<g(\bar{x}))$ then 
+			$$(f,g)_X := \{  (\bar{x},y)\in X \times M|f(\bar{x})<y<g(\bar{x})\}$$
+		\end{itemize}
+	\end{beamerboxesrounded}
+
+\end{frame}
+
+\begin{frame}[c]\frametitle{Cells}
+
+		Let $(i_1,\ldots,i_n)$ be a binary sequence. Then a $(i_1,\ldots,i_n)$-\em cell \em is a definable subset of $M^n$ defined as follows,
+		\begin{columns}
+
+			\begin{column}{7cm}
+					\begin{itemize}
+						\item a $(0)$-cell is a singleton
+						\item a $(1)$-cell is an open interval
+					\end{itemize}
+					Suppose that we have defined $(i_1,\ldots,i_{n-1})$-cells, then
+					\begin{itemize}
+						\item<2-> a $(i_1,\ldots,i_{n-1},0)$-cell is the graph of some $f \in C(X)$,
+						where $X$ is a  $(i_1,\ldots,i_{n-1})$-cell
+						\item<3-> a $(i_1,\ldots,i_{n-1},1)$-cell is the set $(f,g)_X$ where $X$ is a
+						$(i_1,\ldots,i_{n-1})$-cell and $f,g \in C_\infty(X)$
+					\end{itemize}
+
+			\end{column}
+
+			\begin{column}{4cm}
+
+				\temporal<2>{}{\includegraphics[height=5cm,width=4cm]{celliii0-.pdf}}{\includegraphics[height=5cm,width=4cm]{cell-.pdf}}
+
+
+			\end{column}
+
+
+		\end{columns}
+\end{frame}
+
+\begin{frame}[c]\frametitle{Decompositions}
+    
+	A \em decomposition \em of $M^n$ is a partition of $M^n$ into finitely many cells. It is defined recursively.
+
+	\begin{itemize}
+		\item A decomposition of $M$ is a collection,
+		$$\{  (-\infty,a_1),(a_1,a_2),\ldots,(a_k,+\infty),\{a_1\},\ldots,\{a_k\} \}$$
+		where $a_1<\ldots<a_k$ are points in $M$;
+		\item a decomposition of $M^{n+1}$ is a finite partition of $M^{n+1}$ into cells $C$ s.t. the set of projections $\pi(C)$ is a decomposition of $M^n$.
+	\end{itemize}
+
+	A decomposition $\mathcal{D}$ of $M^n$ is said to \em partition \em a set $S \subseteq M^n$ if $S$ is a union of cells in $\mathcal{D}$.
+
+\end{frame}
+
+\begin{frame}[c]\frametitle{Cell Decomposition Theorem}
+    
+	\begin{beamerboxesrounded}[shadow=true]{Uniform Finiteness Property}
+		Let $Y \subseteq M^{n+1}$ be definable and also for every $\bar{x} \in M^n$, 
+		$$Y_{\bar{x}}:= \{  r \in M | (\bar{x},r) \in Y \}$$ is finite.
+		Then there exists $N<\omega$ s.t. $Y_{\bar{x}} \leq N$ for all $\bar{x} \in M^n$.
+	\end{beamerboxesrounded}
+
+	\begin{beamerboxesrounded}[shadow=true]{Cell Decomposition Theorem}
+		\begin{enumerate}
+			\item Given any definable sets $A_1,\ldots,A_k\subseteq M^n$ there is a decomposition of $M^n$ partitioning each of $A_1,\ldots,A_k$.
+			\item For each definable function $f:A \to M$, $A \subseteq M^n$, there is a decomposition $\mathcal{D}$ of $M^n$ partitioning $A$ s.t. the restriction $f|B:B\to M$ to each cell $B \in \mathcal{D}$ with $B\subseteq A$ is continuous.
+		\end{enumerate}
+	\end{beamerboxesrounded}
+
+\end{frame}
+
+\begin{frame}[c]\frametitle{Applications}
+    
+	\begin{beamerboxesrounded}[shadow=true]{Theorem}
+		If $\mathcal{M}$ is an o-minimal structure, the $\text{Th}(\mathcal{M})$ is an o-minimal theory.
+	\end{beamerboxesrounded}
+	Proof...
 
 \end{frame}

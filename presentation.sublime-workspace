@@ -347,15 +347,15 @@
 			"file": "o-minimal.tex",
 			"settings":
 			{
-				"buffer_size": 551,
+				"buffer_size": 3247,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "presentation.sublime-project",
+			"file": "variations.tex",
 			"settings":
 			{
-				"buffer_size": 264,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -371,7 +371,7 @@
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 689,
+				"buffer_size": 707,
 				"line_ending": "Unix"
 			}
 		}
@@ -444,11 +444,11 @@
 	},
 	"file_history":
 	[
+		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/presentation.sublime-project",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/o-minimal.tex",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/main.tex",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/variations.tex",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/.gitignore",
-		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/presentation.sublime-project",
 		"/Users/iamninja/Google Drive/Math/thesis/latex/presentation/omv-presentation.tex",
 		"/Users/iamninja/Projects/book/app/views/statuses/index.html.erb",
 		"/Users/iamninja/Projects/book/app/controllers/statuses_controller.rb",
@@ -620,15 +620,47 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 551,
+						"buffer_size": 3247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								2982,
+								2982
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX Beamer.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "variations.tex",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -642,39 +674,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "presentation.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 264,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								248,
-								248
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -714,15 +714,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 689,
+						"buffer_size": 707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								109,
-								109
+								81,
+								81
 							]
 						],
 						"settings":
@@ -733,10 +733,10 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 137.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -775,7 +775,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 25.0
+		"height": 224.0
 	},
 	"output.find_results":
 	{
