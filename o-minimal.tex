@@ -87,7 +87,7 @@
 
 \begin{frame}[c]\frametitle{Motivation}
 	
-	\begin{beamerboxesrounded}[shadow=true]{Question}
+	\begin{beamerboxesrounded}[shadow=true, upper=question]{Question}
 		What happens with the definable subsets of $M^n$?
 	\end{beamerboxesrounded}
     
@@ -172,5 +172,119 @@
 		If $\mathcal{M}$ is an o-minimal structure, the $\text{Th}(\mathcal{M})$ is an o-minimal theory.
 	\end{beamerboxesrounded}
 	Proof...
+
+\end{frame}
+
+\subsection{Model Theory of o-Mininal Structures}
+
+\begin{frame}[c]\frametitle{Prime models}
+    
+	\begin{beamerboxesrounded}[shadow=true]{Definition}
+		Let $\mathcal{M}\vDash T$  and $A\subseteq \mathcal{M}$.
+		$\mathcal{M}$ is said to be \em prime over $A$ \em if for any $\mathcal{M^{\prime}} \vDash T$ with
+		$A \subseteq \mathcal{M^{\prime}}$, there is an elementary mapping $f:\mathcal{M} \to \mathcal{M^{\prime}}$ that is identity on $A$.
+ 	\end{beamerboxesrounded}
+
+ 	\begin{beamerboxesrounded}[shadow=true]{Theorem}
+ 		Let $A \subseteq \mathcal{M} \vDash T$, where $T$ is an o-minimal theory.
+ 		Then there is an a model $\mathcal{M^{\prime}} \vDash T$, $A \subseteq \mathcal{M^{\prime}}$
+ 		that is prime over $A$, and is unique up to isomorphism over $A$.
+ 	\end{beamerboxesrounded}
+
+\end{frame}
+
+\begin{frame}[c]\frametitle{Ressayre's Theorem}
+    
+	\begin{beamerboxesrounded}[shadow=true]{Definition}
+		Let $\mathcal{M}$ be an $L$-structure and let $A\subseteq M$.
+		Let $\delta$ be an ordinal and \break $(a_\alpha : \alpha < \delta)$ be a sequence of elements from $M$.
+		Let $A_\alpha = A \cup \{a_\beta : \beta < \alpha \}$. 
+		We call $(a_\alpha : \alpha < \delta)$ a \em construction \em over $A$ if $\text{tp}(a_\alpha / A_\alpha)$ is isolated for all $\alpha < \delta$.
+	\end{beamerboxesrounded}
+
+	\begin{beamerboxesrounded}[shadow=true]{Theorem [Ressayre]}
+		Suppose that $A \subseteq \mathbb{M}$, $\mathcal{M}\prec \mathbb{M}$, $\mathcal{N}\prec \mathbb{M}$, and $\mathcal{M}$ and $\mathcal{N}$ are constructible over $A$.
+		Then the identity map on $A$ extends to an isomorphism between $\mathcal{M}$ and $\mathcal{N}$.
+	\end{beamerboxesrounded}
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{Cuts and Noncuts}
+
+	Let $\mathcal{M}\vDash T$. Let $p(x)\in S_1 (M)$.
+	We say that $p(x)$ is a \em cut \em over $\mathcal{M}$ iff 
+	there are non empty disjoint subsets $C_0$ and $C_1$ of $M$, s.t. $C_0 \cup C_1 = M$, 
+	$C_0$ has no greatest element, $C_1$ has no least element, 
+	for all $c\in C_0$, $``c<x"\in p(x)$, and for all $c\in C_1$, $``x<c"\in p(x)$.\\
+	If $p(x)$ is not isolated and is not a cut, we call $p(x)$ a \em noncut\em.
+
+	\begin{exampleblock}{Example}<2->
+
+		Let $\tilde{\mathbb{Q}}$ be the field of real algebraic numbers. We know that 
+		$\pi \in \mathbb{R} \backslash \tilde{\mathbb{Q}}$, so $\text{tp}(\pi,\tilde{\mathbb{Q}})$ 
+		is a cut. \\
+		If $t$ is an infinite hyperreal or $t$ is infinitesimally close to an element of 
+		$\tilde{\mathbb{Q}}$, then $\text{tp}(t,\tilde{\mathbb{Q}})$ is a noncut. 
+
+		\begin{overlayarea}{\textwidth}{2cm}
+			\only<2>{\centering\includegraphics[height=1.5cm,width=11cm]{cut--.pdf}\par}
+			\only<3>{\centering\includegraphics[height=1.5cm,width=11cm]{noncut1--.pdf}\par}
+			\only<4>{\centering\includegraphics[height=1.5cm,width=11cm]{noncut2--.pdf}\par}
+		\end{overlayarea}
+
+	\end{exampleblock}
+
+\end{frame}
+
+\begin{frame}[c]\frametitle{Cuts and Noncuts}
+
+	Let $\mathcal{M} \vDash T$, where $T$ is an o-minimal theory.
+    \break
+    \break
+	\begin{beamerboxesrounded}[shadow=true]{Theorem}
+		Let $\sigma (x) \in S_1 (M)$ be a cut. 
+		Let $\tau (x) \in S_1 (M)$ be a noncut, and $b$ be a realization of $\tau (x)$.
+		Then $\sigma (x)$ is omitted in $P(\mathcal{M} \cup \{b\})$.
+	\end{beamerboxesrounded}
+
+	\begin{beamerboxesrounded}[shadow=true]{Theorem}
+		Let $\tau (x) \in S_1 (M)$ be a noncut. 
+		Let $\sigma (x) \in S_1 (M)$ be a cut, and $b$ be a realization of $\sigma (x)$.
+		Then $\tau (x)$ is omitted in $P(\mathcal{M} \cup \{b\})$.
+	\end{beamerboxesrounded}
+
+\end{frame}
+
+\subsection{Groups and Fields}
+
+\begin{frame}[t]\frametitle{Ordered Groups and Fields}
+    
+	\begin{beamerboxesrounded}[shadow=true]{Theorem}
+		Let $\mathcal{G}=(G,+,0,<)$ be an o-minimal ordered group. 
+		Then $\mathcal{G}$ is a divisible oredered abelian group.
+	\end{beamerboxesrounded}
+
+	\begin{beamerboxesrounded}[shadow=true]{Remind}
+		An abelian group $G$ is divisible if, for every positive integer $n$ and every $g \in G$, there exists $y \in G$ such that $ny = g$.
+	\end{beamerboxesrounded}
+
+	\begin{beamerboxesrounded}[shadow=true]{Theorem}
+		Let $\mathcal{R}=(R,+,\cdot,1,<)$ be an o-minimal ordered ring. 
+		Then $\mathcal{R}$ is a real closed field.
+	\end{beamerboxesrounded}
+
+	\begin{beamerboxesrounded}[shadow=true]{Remind}
+		A field $F$ is real closed if it is elementarily equivalent to $\mathbb{R}$.
+	\end{beamerboxesrounded}
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{Trichotomy Theorem}
+    
+	\begin{beamerboxesrounded}[shadow=true, upper=question]{Question}
+		Is there a sense in which an o-minimal structure is either ``trivial'', or group-like, or field-like?
+	\end{beamerboxesrounded}
+
+	Any answer to this has to be ``local''.
 
 \end{frame}
