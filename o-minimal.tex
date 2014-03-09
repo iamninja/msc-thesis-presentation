@@ -88,7 +88,7 @@
 \begin{frame}[c]\frametitle{Motivation}
 	
 	\begin{beamerboxesrounded}[shadow=true, upper=question]{Question}
-		What happens with the definable subsets of $M^n$?
+		What happen with the definable subsets of $M^n$?
 	\end{beamerboxesrounded}
     
 	\begin{beamerboxesrounded}[shadow=true]{Notation}
@@ -123,9 +123,9 @@
 
 			\end{column}
 
-			\begin{column}{4cm}
+			\begin{column}{4.5cm}
 
-				\temporal<2>{}{\includegraphics[height=5cm,width=4cm]{img/celliii0-.pdf}}{\includegraphics[height=5cm,width=4cm]{img/cell-.pdf}}
+				\temporal<2>{}{\includegraphics[height=4.7cm,width=4.7cm]{img/celliii0-.pdf}}{\includegraphics[height=4.7cm,width=4.7cm]{img/cell-.pdf}}
 
 
 			\end{column}
@@ -166,12 +166,30 @@
 
 \end{frame}
 
-\begin{frame}[c]\frametitle{Applications}
+\begin{frame}[t]\frametitle{Applications}
     
 	\begin{beamerboxesrounded}[shadow=true]{Theorem}
 		If $\mathcal{M}$ is an o-minimal structure, the $\text{Th}(\mathcal{M})$ is an o-minimal theory.
 	\end{beamerboxesrounded}
-	Proof...
+	{\color{red}We will show that if $\mathcal{N} \equiv \mathcal{M}$ then $\mathcal{N}$ is o-minimal.}\\
+	\only<2,3>{
+		Let $\phi (x_1,\ldots,x_m,y)$ be a formula.\\
+		By o-minimality for all $\bar{a} \in M^m$ the set,
+		$$\phi(\bar{a},y)^{M}:={y \in M|\mathcal{M}\vDash\phi(\bar{a},y)}$$
+		is finite union of singletons and intervals.
+		Consider now $\psi(\bar{x},z)$ s.t.
+		$$\psi(\bar{x},z)^{M}:={(\bar{x},z)|z \in \text{bd}({y|\mathcal{M} \vDash \phi(\bar{x},y)})}$$
+
+		\only<3>{
+			\noindent{$\color{darkred}\bigstar$ boundary is definable\\$\color{darkred}\bigstar$ boundary is finite for definable subsets of $M$\\$\color{darkred}\bigstar$ $\psi$ is finite over $M^m$}
+		}
+	}
+	\only<4>{
+		By UFP, $\psi(\bar{x},z)$ will be uniformly finite over $M^m$.\\
+		Thus for some $\kappa < \omega$ we have that,
+		$$\mathcal{M}\vDash(\forall\bar{x})(\{ y|\phi(\bar{x},y)\} \text{ has at most } \kappa \text{ boundary points})$$
+		Therefore for any $\mathcal{N} \equiv \mathcal{M}$ and $\bar{a}$, $\phi(\bar{a},y)^{N}$ has finite boundary points and so it will be a finite union of points and intervals. \qed
+		}
 
 \end{frame}
 
