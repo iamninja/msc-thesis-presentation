@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+%!TEX root = main.tex
+=======
+
+>>>>>>> variations
+
 \documentclass{beamer}
 \usepackage{etex}
 
-
+<<<<<<< HEAD
+\usetheme{Madrid}
+=======
 \usetheme[secheader]{Madrid} 
+>>>>>>> variations
 \usecolortheme{beaver}
 \setbeamercolor*{palette primary}{fg=darkred!60!black,bg=gray!10!white}
 \setbeamercolor{frametitle}{bg=gray!10!white}
@@ -23,8 +32,11 @@
 \institute[$\mu\Pi\lambda\forall$]{\includegraphics[height=2cm,width=2cm]{img/mpla-logo-.pdf}\\Graduate Program on Login and Theory of Algorithms and Computation}
 \date[]{2014}
 
+<<<<<<< HEAD
 \setbeamercolor{question} {bg=orange, fg=orange!20}
 \setbeamercolor{answer}{bg=magenta, fg=magenta!20}
+=======
+>>>>>>> variations
 
 \begin{document}
 
@@ -33,8 +45,13 @@
 \end{frame}
 
 \addtobeamertemplate{frametitle}{}{%
+<<<<<<< HEAD
+\begin{textblock*}{100mm}(.92\textwidth,-0.97cm)
+\includegraphics[height=1cm,width=1cm]{img/mpla-logo-.pdf}
+=======
 \begin{textblock*}{100mm}(.90\textwidth,-1.37cm)
 \includegraphics[height=1.4cm,width=1.4cm]{mpla-logo-.pdf}
+>>>>>>> variations
 \end{textblock*}}
 
 \input{o-minimal.tex}
