@@ -24,4 +24,8 @@
 *.fdb*
 *.nav
 *.snm
+<<<<<<< HEAD
 *.fls
+=======
+*.fls
+>>>>>>> o-minimality
