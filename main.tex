@@ -1,15 +1,29 @@
+
+
 \documentclass{beamer}
-\usetheme{Madrid}
+\usepackage{etex}
+
+\usetheme[secheader]{Madrid} 
 \usecolortheme{beaver}
+\setbeamercolor*{palette primary}{fg=darkred!60!black,bg=gray!10!white}
+\setbeamercolor{frametitle}{bg=gray!10!white}
 \usefonttheme{serif}
+
 \usepackage{textpos}
 \usepackage{pstricks}
 \usepackage{pstricks-add}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{tabularx}
+\usepackage{tabulary}
+
 
 \title{o-Minimality and its Variations}
 \author[Vagios Vlachos]{Vagios Vlachos}
 \institute[$\mu\Pi\lambda\forall$]{\includegraphics[height=2cm,width=2cm]{mpla-logo-.pdf}\\Graduate Program on Login and Theory of Algorithms and Computation}
 \date[]{2014}
+
 
 \begin{document}
 
@@ -18,10 +32,12 @@
 \end{frame}
 
 \addtobeamertemplate{frametitle}{}{%
-\begin{textblock*}{100mm}(.92\textwidth,-0.97cm)
-\includegraphics[height=1cm,width=1cm]{mpla-logo-.pdf}
+\begin{textblock*}{100mm}(.90\textwidth,-1.37cm)
+\includegraphics[height=1.4cm,width=1.4cm]{mpla-logo-.pdf}
 \end{textblock*}}
 
 \input{o-minimal.tex}
+\input{variations.tex}
+\input{conclusion.tex}
 
 \end{document}
