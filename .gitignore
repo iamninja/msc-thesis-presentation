@@ -25,3 +25,6 @@
 *.nav
 *.snm
 *.fls
+*.bcf
+*.xml
+
