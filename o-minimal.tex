@@ -72,7 +72,7 @@
 \begin{frame}[c]\frametitle{Applications}	
     
 	\begin{block}{Corollary}
-		Let $f:(a,b) \to M$ be definale and continuous. Then $f$ takes a maximum and minimum value on $[a,b]$.
+		Let $f:(a,b) \to M$ be definable and continuous. Then $f$ takes a maximum and minimum value on $[a,b]$.
 	\end{block}
 
 	\begin{block}{Exchange Principle \citep{pillay1986definable}}
@@ -88,11 +88,11 @@
 \begin{frame}[c]\frametitle{Motivation}
 	
 	\begin{beamerboxesrounded}[shadow=true, upper=question]{Question}
-		What happen with the definable subsets of $M^n$?
+		What happens with the definable subsets of $M^n$?
 	\end{beamerboxesrounded}
     
 	\begin{beamerboxesrounded}[shadow=true]{Notation}
-		Given definable $X \subseteq M^n$
+		Given a definable $X \subseteq M^n$
 		\begin{itemize}
 			\item $C(X):= \{ f:X \to M|f \text{ is definable and continuous}\}$
 			\item $C_\infty(X):=C(X) \cup \{ -\infty, +\infty \}$
@@ -169,16 +169,16 @@
 \begin{frame}[t]\frametitle{Applications}
     
 	\begin{beamerboxesrounded}[shadow=true]{Theorem \citep{knight1986definable}}
-		If $\mathcal{M}$ is an o-minimal structure, the $\text{Th}(\mathcal{M})$ is an o-minimal theory.
+		If $\mathcal{M}$ is an o-minimal structure, then $\text{Th}(\mathcal{M})$ is an o-minimal theory.
 	\end{beamerboxesrounded}
 	{\color{red}We will show that if $\mathcal{N} \equiv \mathcal{M}$ then $\mathcal{N}$ is o-minimal.}\\
 	\only<2,3>{
 		Let $\phi (x_1,\ldots,x_m,y)$ be a formula.\\
 		By o-minimality for all $\bar{a} \in M^m$ the set,
-		$$\phi(\bar{a},y)^{M}:={y \in M|\mathcal{M}\vDash\phi(\bar{a},y)}$$
+		$$\phi(\bar{a},y)^{M}:=\{y \in M|\mathcal{M}\vDash\phi(\bar{a},y)\}$$
 		is finite union of singletons and intervals.
 		Consider now $\psi(\bar{x},z)$ s.t.
-		$$\psi(\bar{x},z)^{M}:={(\bar{x},z)|z \in \text{bd}({y|\mathcal{M} \vDash \phi(\bar{x},y)})}$$
+		$$\psi(\bar{x},z)^{M}:=\{(\bar{x},z)|z \in \text{bd}({y|\mathcal{M} \vDash \phi(\bar{x},y)})\}$$
 
 		\only<3>{
 			\noindent{$\color{darkred}\bigstar$ boundary is definable\\$\color{darkred}\bigstar$ boundary is finite for definable subsets of $M$\\$\color{darkred}\bigstar$ $\psi$ is finite over $M^m$}
